@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- add tailwind -->
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="dist/tailwind.css">
     <title>Spotify - Your Top Songs of 2020</title>
 </head>
@@ -18,17 +18,33 @@
          <!-- sidebar -->
         <div class="bg-black text-white w-44 p-6 flex flex-col justify-between">
             <div class="border-b-2 border-gray-50 text-gray-100">
-                <!-- logo -->
+                <img class="w-22 h-10 pb-2" src="image/Spotify_Logo_CMYK_Green.png" alt="Spotify_Logo_CMYK_Green">
                 MENU
-                <div>home</div>
-                <div>search</div>
-                <div>Your Library</div>
+                <div class="pb-2 home-icon">
+                    <i class="fas fa-home fa-lg fa-fw text-sm" aria-hidden="true"></i><a class="">&nbsp; Home </a>
+                </div>
+                
+                <div class="pb-2 search">
+                    <i class="fas fa-search fa-lg fa-fw text-sm" aria-hidden="true"></i><a class="">&nbsp; Search </a>
+                </div>
+
+                <div class="pb-2 your-library">
+                    <i class="fas fa-grip-lines-vertical fa-lg fa-fw text-sm" aria-hidden="true"></i><a class="">&nbsp; Your Library </a>
+                </div>
             </div>
 
             <div>
-                PLAYLIST
-                <div>Create Playist</div>
-                <div>Liked Songs</div>
+                <div class="pt-8 pb-3 font-sans text-base antialiased md:font-serif sm:subpixel-antialiased md:antialiased playlists">
+                    PLAYLISTS
+                </div>
+                
+                <div class="pb-2 create-playlist">
+                    <i class="fas fa-plus-square fa-lg fa-fw text-sm" aria-hidden="true"></i><a class="text-sm">&nbsp;Create Playlists</a>
+                </div>
+                
+                <div class="pb-2 liked-songs">
+                    <i class="far fa-heart fa-lg fa-fw text-sm" aria-hidden="true"></i><a class="text-sm">&nbsp;Liked Songs </a>
+                </div>
             </div>
             <div>
                 Install App
